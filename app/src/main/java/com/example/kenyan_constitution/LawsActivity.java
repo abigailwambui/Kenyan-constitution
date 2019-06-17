@@ -16,6 +16,6 @@ public class LawsActivity extends AppCompatActivity {
         mLawsTextView = (TextView) findViewById(R.id.lawsTextView);
         Intent intent = getIntent();
         String laws = intent.getStringExtra("laws");
-        mLawsTextView.setText("Kenyan laws click to get elaborate details: " + laws);
+        mLawsTextView.setText("Kenyan Laws by LOF Kenya click to get elaborate details: " + laws);
     }
 }
