@@ -33,11 +33,15 @@ public class KenyanConstitutionActivity extends AppCompatActivity {
         mButtonKenyanConstitution = (Button) findViewById(R.id.buttonKenyanConstitution);
         mButtonKenyanConstitution.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {if(mNameEditText.getText().toString().isEmpty() || mEmailEditText.getText().toString().isEmpty() ) {
+
+                Toast.makeText(KenyanConstitutionActivity.this, "Please fill in all the fields in the form", Toast.LENGTH_LONG).show();
+            } else {
                 Intent intent = new Intent(KenyanConstitutionActivity.this, LawsActivity.class);
                 startActivity(intent);
                 String name = mNameEditText.getText().toString();
-                Toast.makeText(KenyanConstitutionActivity.this, "Welcome "+name, Toast.LENGTH_LONG).show();
+                Toast.makeText(KenyanConstitutionActivity.this, "Welcome " + name, Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
