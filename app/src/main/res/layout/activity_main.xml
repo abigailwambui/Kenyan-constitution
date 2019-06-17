@@ -4,11 +4,13 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/image1"
-        android:scaleType="centerCrop" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1" />
 
     <TextView
         android:id="@+id/textViewMain"
@@ -29,12 +31,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="124dp"
+        android:layout_marginStart="122dp"
         android:layout_marginLeft="110dp"
-        android:layout_marginEnd="130dp"
-        android:layout_marginBottom="251dp"
-        android:text="Get Started"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="177dp"
         android:background="@color/colorPrimaryDark"
+        android:text="Get Started"
         android:textColor="@color/colorTextIcons" />
 
 </RelativeLayout>
