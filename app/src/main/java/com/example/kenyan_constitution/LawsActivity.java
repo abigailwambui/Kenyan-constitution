@@ -36,8 +36,7 @@ public class LawsActivity extends AppCompatActivity {
         Typeface walkWayFont = Typeface.createFromAsset(getAssets(), "fonts/Walkway_Oblique_SemiBold.ttf");
         mLawsTextView.setTypeface(walkWayFont);
         mLawsTextView = (TextView) findViewById(R.id.lawsTextView);
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, laws);
-        mListView.setAdapter(adapter);
+        MyConstitutionsArrayAdapter adapter = new MyConstitutionsArrayAdapter(this, android.R.layout.simple_list_item_1, laws,content);
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

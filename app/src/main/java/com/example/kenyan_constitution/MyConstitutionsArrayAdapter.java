@@ -1,8 +1,9 @@
 package com.example.kenyan_constitution;
 
 import android.content.Context;
+import android.widget.ArrayAdapter;
 
-public class MyConstitutionsArrayAdapter {
+public class MyConstitutionsArrayAdapter extends ArrayAdapter {
     private Context mContext;
     private String[] mLaws;
     private String[] mContent;
@@ -12,5 +13,12 @@ public class MyConstitutionsArrayAdapter {
         this.mContext = mContext;
         this.mLaws = mLaws;
         this.mContent = mContent;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        String laws = mLaws[position];
+        String content = mContent[position];
+        return String.format(laws, content);
     }
 }
