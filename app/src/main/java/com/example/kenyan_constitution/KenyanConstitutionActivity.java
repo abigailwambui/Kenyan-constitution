@@ -29,7 +29,7 @@ public class KenyanConstitutionActivity extends AppCompatActivity {
                 Intent intent = new Intent(KenyanConstitutionActivity.this, LawsActivity.class);
                 startActivity(intent);
                 String name = mNameEditText.getText().toString();
-                Toast.makeText(KenyanConstitutionActivity.this, name, Toast.LENGTH_LONG).show();
+                Toast.makeText(KenyanConstitutionActivity.this, "Welcome "+name, Toast.LENGTH_LONG).show();
             }
         });
     }
