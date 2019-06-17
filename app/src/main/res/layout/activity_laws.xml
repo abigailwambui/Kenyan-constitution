@@ -7,5 +7,7 @@
         android:layout_height="wrap_content"
         android:text="by LOF KENYA "
         android:id="@+id/lawsTextView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 </RelativeLayout>
