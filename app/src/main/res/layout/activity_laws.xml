@@ -7,13 +7,15 @@
         android:layout_height="wrap_content"
         android:text="by LOF KENYA "
         android:id="@+id/lawsTextView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listView1"
         android:layout_below="@+id/lawsTextView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+
+         />
 </RelativeLayout>

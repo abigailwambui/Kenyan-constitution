@@ -19,6 +19,10 @@ public class MyConstitutionsArrayAdapter extends ArrayAdapter {
     public Object getItem(int position) {
         String laws = mLaws[position];
         String content = mContent[position];
-        return String.format(laws, content);
+        return String.format("\n%s \n \n %s\n",laws, content);
+    }
+    @Override
+    public int getCount(){
+        return mLaws.length;
     }
 }
