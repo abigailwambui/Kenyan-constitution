@@ -18,6 +18,13 @@ public class LawsActivity extends AppCompatActivity {
     private String[] laws = new String[] {"We the people of Kenya-","ACKNOWLEDGING", "HONOURING",
             "PROUD", "RESPECTFUL", "COMMITTED", "RECOGNISING",
             "EXERCISING", "ADOPT, ENACT", "GOD BLESS KENYA"};
+    private String[] content = new String[] {"the supremacy of the Almighty God of all creation", "those who heroically struggled to bring freedom and justice to our land",
+    "of our ethnic, cultural and religious diversity, and determined to live in peace and unity as one indivisible sovereign nation",
+    "of the environment, which is our heritage, and determined to sustain it for the benefit of future generations",
+    "to nurturing and protecting the well-being of the individual, the family, communities and the nation",
+"the aspirations of all Kenyans for a government based on the essential values of human rights, equality, freedom, democracy, social justice and the rule of law",
+    "our sovereign and inalienable right to determine the form of governance of our country and having participated fully in the making of this Constitution",
+    "and give this Constitution to ourselves and to our future generations"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
